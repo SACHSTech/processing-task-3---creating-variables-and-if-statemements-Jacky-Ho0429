@@ -62,8 +62,10 @@ public class Sketch extends PApplet {
       // Draws the Illuminati if Random Numbers are both 50 (Unlikely)
       fill (37, 190, 38);
       triangle (intRandomX, intRandomY + 100, intRandomX + 50, intRandomY, intRandomX + 100, intRandomY + 100);
+      
       fill (255, 255, 255);
       ellipse (intRandomX + 50, intRandomY + 60, intRandomX + 10, intRandomY - 15);
+      
       fill (0, 0, 0);
       ellipse (intRandomX + 50, intRandomY + 60, intRandomX - 40, intRandomY - 15);
     }
