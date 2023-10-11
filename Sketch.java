@@ -51,11 +51,11 @@ public class Sketch extends PApplet {
       fill (0, 0, 0);
       } 
       else {
-      //Bloodshot pupil
+      // Bloodshot pupil
       fill (255, 0, 0);
       }
 
-      //Draws the pupil
+      // Draws the pupil
       ellipse (intRandomX, intRandomY, width - 375, height - 375);
     }
     else {
