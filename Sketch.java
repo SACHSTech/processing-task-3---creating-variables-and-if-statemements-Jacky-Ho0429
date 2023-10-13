@@ -30,8 +30,8 @@ public class Sketch extends PApplet {
     else if (intRandomX <= 400 || intDay >= 5) {
       // Night
       background (72, 61, 139);
-      currentTime = nf(hour(), 2) + ":" + nf(minute(), 2) + ":" + nf(second(), 2);
     } 
+    currentTime = nf(hour(), 2) + ":" + nf(minute(), 2) + ":" + nf(second(), 2);
   }
 
 
