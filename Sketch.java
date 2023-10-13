@@ -94,6 +94,11 @@ public class Sketch extends PApplet {
       // Door
       rect((float)(width / 4.12) + 225, (float)(height / 1.18) - 70, (float)(width / 16), (float)(height / 8));
       stroke(255, 140, 105);
+
+      // Time
+      fill(0);
+      textSize(16);
+      text(currentTime, 10, 20);
     }
     else {
       // Ground
