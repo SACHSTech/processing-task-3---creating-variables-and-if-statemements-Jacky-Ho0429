@@ -8,6 +8,9 @@ public class Sketch extends PApplet {
   int intRandomX = myRandom.nextInt((350 - 50) + 1) + 50;
   int intRandomY = myRandom.nextInt((200 - 50) + 1) + 50;
   int intDay = myRandom.nextInt(10);
+  
+  // Intiaites Time
+  String currentTime;
 
   public void settings() {
 	// Size of Canvas
@@ -27,6 +30,7 @@ public class Sketch extends PApplet {
     else if (intRandomX <= 400 || intDay >= 5) {
       // Night
       background (72, 61, 139);
+      currentTime = nf(hour(), 2) + ":" + nf(minute(), 2) + ":" + nf(second(), 2);
     } 
   }
 
@@ -144,6 +148,15 @@ public class Sketch extends PApplet {
       stroke(255, 140, 105);
       fill(255, 140, 105);
       ellipse((float)(width / 3.48) + 225, (float)(height / 1.10) - 70, (float)(width / 133.33), (float)(width / 133.33));
+      
+      // Time
+      fill(0);
+      textSize(16);
+      text(currentTime, 10, 20);
     }
+  }
+
+  private int getCurrentHour() {
+    return hour();
   }
 }
